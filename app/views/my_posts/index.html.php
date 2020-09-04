@@ -1,6 +1,6 @@
 <h1>Blog</h1>
 <!--We'll hard-code a link to the add post page -->
-<p><a href="/my_posts/add/">Add Post</a></p>
+<p><a href="/bark/backend/my_posts/add/">Add Post</a></p>
 
 <!--Loop through all the posts in the $myPosts object -->
 <?php
@@ -12,7 +12,7 @@
 <article>
     <h2>
         <!--Use the id column to build a link to this post -->
-        <a href="/my_posts/view/<?=$post->id ?>/">
+        <a href="/bark/backend/my_posts/view/<?=$post->id ?>/">
             <!--Use the title column to show the post title -->
             <?=$post->title ?>
         </a>

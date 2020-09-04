@@ -6,7 +6,7 @@ namespace app\models;
 //All new models must extend the \lithium\data\Model class
 class Services extends \lithium\data\Model {
 
-    //The Services class is intentionally empty right now
+    //The MyPosts class is intentionally empty right now
 
 }
 

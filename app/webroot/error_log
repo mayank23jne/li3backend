@@ -1,0 +1,897 @@
+[17-Aug-2020 06:22:08 UTC] PHP Fatal error:  Uncaught lithium\core\ClassNotFoundException: Class `App` of type `controllers` not found. in /home/ewayiuax/public_html/bark/app/libraries/lithium/core/Libraries.php:702
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/app/libraries/lithium/aop/Filters.php(231): lithium\core\Libraries::lithium\core\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/app/libraries/lithium/core/Libraries.php(708): lithium\aop\Filters::run('lithium\\core\\Li...', 'instance', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/app/libraries/lithium/action/Dispatcher.php(252): lithium\core\Libraries::instance('controllers', 'App', Array)
+#3 /home/ewayiuax/public_html/bark/app/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/app/libraries/lithium/action/Dispatcher.php(256): lithium\aop\Filters::run('lithium\\action\\...', '_callable', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/app/libraries/lithium/action/Dispatcher.php(168): in /home/ewayiuax/public_html/bark/app/libraries/lithium/action/Dispatcher.php on line 254
+[17-Aug-2020 06:32:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php:325
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php(325): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/database/adapter/MySql.php(210): lithium\data\source\Database->connect()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Source.php(111): lithium\data\source\database\adapter\MySql->connect()
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php(211): lithium\data\Source->_init()
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/database/adapter/MySql.php(193): lithium\data\source\Database->_init()
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/core/ObjectDeprecated.php(77): lithium\data\source\da in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php on line 339
+[17-Aug-2020 06:32:27 UTC] PHP Fatal error:  Uncaught lithium\core\ClassNotFoundException: Class `MyPost` of type `controllers` not found. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/core/Libraries.php:702
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\core\Libraries::lithium\core\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/core/Libraries.php(708): lithium\aop\Filters::run('lithium\\core\\Li...', 'instance', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(252): lithium\core\Libraries::instance('controllers', 'MyPost', Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(256): lithium\aop\Filters::run('lithium\\action\\...', '_callable', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/l in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php on line 254
+[17-Aug-2020 09:38:09 UTC] PHP Fatal error:  Uncaught Error: Class 'app\controllers\Services' not found in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php:64
+Stack trace:
+#0 [internal function]: app\controllers\ApiController->getData()
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/backend/librari in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 64
+[17-Aug-2020 11:08:05 UTC] PHP Fatal error:  Uncaught Error: Class 'app\controllers\Services' not found in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php:64
+Stack trace:
+#0 [internal function]: app\controllers\ApiController->getData()
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/backend/librari in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 64
+[17-Aug-2020 11:08:52 UTC] PHP Fatal error:  Uncaught Error: Class 'app\controllers\Services' not found in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php:64
+Stack trace:
+#0 [internal function]: app\controllers\ApiController->getData()
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/backend/librari in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 64
+[17-Aug-2020 11:12:53 UTC] PHP Fatal error:  Uncaught Error: Class 'app\controllers\Services' not found in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php:28
+Stack trace:
+#0 [internal function]: app\controllers\ApiController->getData()
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/backend/librari in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 28
+[17-Aug-2020 11:12:58 UTC] PHP Fatal error:  Uncaught Error: Class 'app\controllers\Services' not found in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php:28
+Stack trace:
+#0 [internal function]: app\controllers\ApiController->getData()
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/backend/librari in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 28
+[17-Aug-2020 11:13:13 UTC] PHP Fatal error:  Uncaught Error: Class 'app\controllers\Services' not found in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php:19
+Stack trace:
+#0 [internal function]: app\controllers\ApiController->index()
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/backend/libraries in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 19
+[17-Aug-2020 11:17:16 UTC] PHP Fatal error:  Uncaught lithium\template\TemplateException: Template not found at path `/home/ewayiuax/public_html/bark/backend/views/api/index.html.php`. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/template/view/adapter/File.php:235
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/template/view/adapter/File.php(137): lithium\template\view\adapter\File->_paths('template', Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/template/View.php(395): lithium\template\view\adapter\File->template('template', Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\template\View->lithium\template\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/template/View.php(397): lithium\aop\Filters::run(Object(lithium\template\View), '_step', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/template/View.php(331): lithium\template\View->_step(Array, Array, Array, Array)
+#5 /home/e in /home/ewayiuax/public_html/bark/backend/libraries/lithium/template/view/adapter/File.php on line 235
+[18-Aug-2020 09:56:33 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 48 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php(48): lithium\data\Model::create('{"name":"nadeem...')
+#1 [internal function]: app\controllers\ApiController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/D in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 10:04:00 UTC] PHP Fatal error:  Uncaught Error: Class 'app\controllers\Leads' not found in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php:49
+Stack trace:
+#0 [internal function]: app\controllers\ApiController->addData()
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/backend/libraries/ in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 49
+[18-Aug-2020 10:12:46 UTC] PHP Fatal error:  Uncaught Error: Class 'app\controllers\Leads' not found in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php:49
+Stack trace:
+#0 [internal function]: app\controllers\ApiController->addData()
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/backend/libraries/ in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 49
+[18-Aug-2020 10:21:59 UTC] PHP Fatal error:  Uncaught Error: Class 'app\controllers\Leads' not found in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php:49
+Stack trace:
+#0 [internal function]: app\controllers\ApiController->addData()
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/backend/libraries/ in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 49
+[18-Aug-2020 10:33:29 UTC] PHP Fatal error:  Uncaught Error: Class 'app\controllers\Leads' not found in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php:49
+Stack trace:
+#0 [internal function]: app\controllers\ApiController->addData()
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/backend/libraries/ in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 49
+[18-Aug-2020 10:35:19 UTC] PHP Fatal error:  Uncaught Error: Class 'app\controllers\Leads' not found in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php:49
+Stack trace:
+#0 [internal function]: app\controllers\ApiController->addData()
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/backend/libraries/ in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 49
+[18-Aug-2020 10:37:12 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 49 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php(49): lithium\data\Model::create('{"lead_cost_cre...')
+#1 [internal function]: app\controllers\ApiController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/D in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 10:38:19 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 49 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php(49): lithium\data\Model::create('{\n  "lead_cost_...')
+#1 [internal function]: app\controllers\ApiController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/ in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 10:40:42 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 49 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php(49): lithium\data\Model::create('{"lead_cost_cre...')
+#1 [internal function]: app\controllers\ApiController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/D in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 10:49:29 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 49 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php(49): lithium\data\Model::create('{"lead_cost_cre...')
+#1 [internal function]: app\controllers\ApiController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/D in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 10:55:36 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/LeadsController.php on line 49 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/LeadsController.php(49): lithium\data\Model::create('{\n  "lead_cost_...')
+#1 [internal function]: app\controllers\LeadsController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\LeadsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 10:56:01 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/LeadsController.php on line 49 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/LeadsController.php(49): lithium\data\Model::create('{\n\n  "email_add...')
+#1 [internal function]: app\controllers\LeadsController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\LeadsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithiu in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 10:56:28 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/LeadsController.php on line 49 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/LeadsController.php(49): lithium\data\Model::create('{\n\n  "email_add...')
+#1 [internal function]: app\controllers\LeadsController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\LeadsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithiu in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 10:58:35 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/LeadsController.php on line 49 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/LeadsController.php(49): lithium\data\Model::create('{\n\n  "email_add...')
+#1 [internal function]: app\controllers\LeadsController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\LeadsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithiu in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 11:04:07 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/LeadsController.php on line 48 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/LeadsController.php(48): lithium\data\Model::create('{\n\n  "email_add...')
+#1 [internal function]: app\controllers\LeadsController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\LeadsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithiu in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 11:11:56 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 49 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php(49): lithium\data\Model::create('{\n\t"title":"dss...')
+#1 [internal function]: app\controllers\MyPostsController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\MyPostsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/librarie in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 11:16:17 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 49 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php(49): lithium\data\Model::create('{\n\t"title":"abc...')
+#1 [internal function]: app\controllers\MyPostsController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\MyPostsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/librarie in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 11:16:58 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 48 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php(48): lithium\data\Model::create('{\n\t"title":"abc...')
+#1 [internal function]: app\controllers\MyPostsController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\MyPostsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/librarie in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 11:17:20 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 48 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php(48): lithium\data\Model::create('{\n\t"title":"abc...')
+#1 [internal function]: app\controllers\MyPostsController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\MyPostsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/librarie in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 11:17:45 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 31 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php(31): lithium\data\Model::create('{\n\t"title":"abc...')
+#1 [internal function]: app\controllers\MyPostsController->add()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\MyPostsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/li in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 11:20:33 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 31 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php(31): lithium\data\Model::create('{\n\t"title":"abc...')
+#1 [internal function]: app\controllers\MyPostsController->add()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\MyPostsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/li in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 11:22:17 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 31 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php(31): lithium\data\Model::create('{\n\t"title":"abc...')
+#1 [internal function]: app\controllers\MyPostsController->add()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\MyPostsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/li in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 11:23:38 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 31 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php(31): lithium\data\Model::create('{\n\t"title":"abc...')
+#1 [internal function]: app\controllers\MyPostsController->add()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\MyPostsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/li in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 11:23:48 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 48 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php(48): lithium\data\Model::create('{\n\t"title":"abc...')
+#1 [internal function]: app\controllers\MyPostsController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\MyPostsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/librarie in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 11:24:13 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 48 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php(48): lithium\data\Model::create('{\n\t"title":"abc...')
+#1 [internal function]: app\controllers\MyPostsController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\MyPostsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/librarie in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 11:31:29 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 48 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php(48): lithium\data\Model::create('{\n\t"title":"abc...')
+#1 [internal function]: app\controllers\MyPostsController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\MyPostsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/librarie in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 11:32:08 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 48 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php(48): lithium\data\Model::create('{\n\t"title":"abc...')
+#1 [internal function]: app\controllers\MyPostsController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\MyPostsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/librarie in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[18-Aug-2020 11:32:34 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 48 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php(48): lithium\data\Model::create('{\n\t"title":"abc...')
+#1 [internal function]: app\controllers\MyPostsController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\MyPostsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/librarie in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[24-Aug-2020 08:09:33 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 49 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php(49): lithium\data\Model::create('{"lead_cost_cre...')
+#1 [internal function]: app\controllers\ApiController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/D in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[24-Aug-2020 08:14:42 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 49 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php(49): lithium\data\Model::create('{"email_address...')
+#1 [internal function]: app\controllers\ApiController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/D in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[24-Aug-2020 09:08:18 UTC] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php on line 1256
+[27-Aug-2020 07:48:23 UTC] PHP Fatal error:  Uncaught lithium\action\DispatchException: Action `getDataNew` not found. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php:207
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(280): lithium\aop\Filters::run('lithium\\action\\...', '_call', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php on line 207
+[27-Aug-2020 07:48:38 UTC] PHP Fatal error:  Uncaught lithium\action\DispatchException: Action `getDataNew` not found. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php:207
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\ApiController), '__invoke', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(280): lithium\aop\Filters::run('lithium\\action\\...', '_call', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php on line 207
+[29-Aug-2020 06:49:38 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 50 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php(50): lithium\data\Model::create('{"form_name":"n...')
+#1 [internal function]: app\controllers\FormsController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/ in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[29-Aug-2020 06:53:52 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 50 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php(50): lithium\data\Model::create('{\n\t"form_name":...')
+#1 [internal function]: app\controllers\FormsController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithiu in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[29-Aug-2020 06:54:42 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lithium\data\Model::create() must be of the type array, string given, called in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 49 and defined in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1094
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php(49): lithium\data\Model::create('{\n\t"form_name":...')
+#1 [internal function]: app\controllers\FormsController->addData()
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithiu in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1094
+[29-Aug-2020 06:55:44 UTC] PHP Fatal error:  Uncaught lithium\core\ConfigException: Missing key `id` from schema. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1028
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php(1104): lithium\data\Model::schema()
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\Model::lithium\data\{closure}(Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php(1114): lithium\aop\Filters::run('app\\models\\Form...', 'create', Array, Object(Closure))
+#3 /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php(51): lithium\data\Model::create(Array)
+#4 [internal function]: app\controllers\FormsController->addData()
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#6 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#7  in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1028
+[29-Aug-2020 06:56:01 UTC] PHP Fatal error:  Uncaught lithium\core\ConfigException: Missing key `id` from schema. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1028
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php(1104): lithium\data\Model::schema()
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\Model::lithium\data\{closure}(Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php(1114): lithium\aop\Filters::run('app\\models\\Form...', 'create', Array, Object(Closure))
+#3 /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php(51): lithium\data\Model::create(Array)
+#4 [internal function]: app\controllers\FormsController->addData()
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#6 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#7  in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1028
+[29-Aug-2020 06:56:35 UTC] PHP Fatal error:  Uncaught lithium\core\ConfigException: Missing key `id` from schema. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1028
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php(1104): lithium\data\Model::schema()
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\Model::lithium\data\{closure}(Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php(1114): lithium\aop\Filters::run('app\\models\\Form...', 'create', Array, Object(Closure))
+#3 /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php(51): lithium\data\Model::create(Array)
+#4 [internal function]: app\controllers\FormsController->addData()
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#6 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#7  in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1028
+[29-Aug-2020 06:58:24 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 65
+[29-Aug-2020 06:59:17 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 65
+[29-Aug-2020 06:59:45 UTC] PHP Fatal error:  Uncaught lithium\core\ConfigException: Missing key `id` from schema. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1028
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php(1104): lithium\data\Model::schema()
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\Model::lithium\data\{closure}(Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php(1114): lithium\aop\Filters::run('app\\models\\Form...', 'create', Array, Object(Closure))
+#3 /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php(51): lithium\data\Model::create(Array)
+#4 [internal function]: app\controllers\FormsController->addData()
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#6 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#7  in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1028
+[29-Aug-2020 07:00:51 UTC] PHP Fatal error:  Uncaught lithium\core\ConfigException: Missing key `id` from schema. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php:1028
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php(1104): lithium\data\Model::schema()
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\Model::lithium\data\{closure}(Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php(1114): lithium\aop\Filters::run('app\\models\\Form...', 'create', Array, Object(Closure))
+#3 /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php(51): lithium\data\Model::create(Array)
+#4 [internal function]: app\controllers\FormsController->addData()
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#6 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#7  in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/Model.php on line 1028
+[29-Aug-2020 11:56:39 UTC] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 78
+[29-Aug-2020 11:57:03 UTC] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 78
+[29-Aug-2020 11:57:13 UTC] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 78
+[29-Aug-2020 11:57:19 UTC] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 78
+[29-Aug-2020 11:57:48 UTC] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 78
+[29-Aug-2020 11:57:53 UTC] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 78
+[29-Aug-2020 11:57:53 UTC] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 78
+[29-Aug-2020 11:58:21 UTC] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 78
+[29-Aug-2020 12:02:36 UTC] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 78
+[29-Aug-2020 12:03:08 UTC] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 78
+[29-Aug-2020 12:03:27 UTC] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 78
+[29-Aug-2020 12:05:44 UTC] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 78
+[29-Aug-2020 12:06:03 UTC] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 78
+[29-Aug-2020 12:14:16 UTC] PHP Warning:  Illegal string offset 'id' in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 78
+[29-Aug-2020 12:17:24 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 77
+[29-Aug-2020 12:17:37 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 77
+[29-Aug-2020 12:19:49 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 77
+[29-Aug-2020 12:20:22 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 77
+[29-Aug-2020 12:29:00 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 77
+[29-Aug-2020 12:49:44 UTC] PHP Fatal error:  Uncaught lithium\action\DispatchException: Action `deleteData` not found. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php:207
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(280): lithium\aop\Filters::run('lithium\\action\\...', '_call', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backe in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php on line 207
+[29-Aug-2020 12:50:22 UTC] PHP Fatal error:  Uncaught lithium\action\DispatchException: Action `deleteData` not found. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php:207
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(280): lithium\aop\Filters::run('lithium\\action\\...', '_call', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backe in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php on line 207
+[29-Aug-2020 12:50:42 UTC] PHP Fatal error:  Uncaught lithium\action\DispatchException: Action `deleteData` not found. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php:207
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(280): lithium\aop\Filters::run('lithium\\action\\...', '_call', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backe in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php on line 207
+[29-Aug-2020 12:51:00 UTC] PHP Fatal error:  Uncaught lithium\action\DispatchException: Action `deleteData` not found. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php:207
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(280): lithium\aop\Filters::run('lithium\\action\\...', '_call', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backe in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php on line 207
+[29-Aug-2020 12:52:09 UTC] PHP Fatal error:  Uncaught lithium\action\DispatchException: Action `deleteData` not found. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php:207
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(280): lithium\aop\Filters::run('lithium\\action\\...', '_call', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backe in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php on line 207
+[29-Aug-2020 12:53:01 UTC] PHP Fatal error:  Uncaught lithium\action\DispatchException: Action `deleteData` not found. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php:207
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(280): lithium\aop\Filters::run('lithium\\action\\...', '_call', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backe in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php on line 207
+[29-Aug-2020 12:53:10 UTC] PHP Fatal error:  Uncaught lithium\action\DispatchException: Action `deleteData` not found. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php:207
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(280): lithium\aop\Filters::run('lithium\\action\\...', '_call', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backe in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php on line 207
+[29-Aug-2020 12:53:16 UTC] PHP Fatal error:  Uncaught lithium\action\DispatchException: Action `deleteData` not found. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php:207
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(280): lithium\aop\Filters::run('lithium\\action\\...', '_call', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backe in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php on line 207
+[29-Aug-2020 12:53:59 UTC] PHP Fatal error:  Uncaught lithium\action\DispatchException: Action `deleteData` not found. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php:207
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(280): lithium\aop\Filters::run('lithium\\action\\...', '_call', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backe in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php on line 207
+[29-Aug-2020 12:54:07 UTC] PHP Fatal error:  Uncaught lithium\action\DispatchException: Action `deleteData` not found. in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php:207
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(280): lithium\aop\Filters::run('lithium\\action\\...', '_call', Array, Object(Closure))
+#5 /home/ewayiuax/public_html/bark/backe in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php on line 207
+[29-Aug-2020 12:55:47 UTC] PHP Fatal error:  Uncaught Error: Class 'app\controllers\MyPosts' not found in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:113
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('7')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/bac in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 113
+[29-Aug-2020 12:56:00 UTC] PHP Fatal error:  Uncaught Error: Class 'app\controllers\MyPosts' not found in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:113
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('7')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/bac in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 113
+[29-Aug-2020 12:59:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:113
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('6')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/ba in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 113
+[29-Aug-2020 13:05:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:113
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('6')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/ba in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 113
+[29-Aug-2020 13:05:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:113
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('6')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/ba in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 113
+[29-Aug-2020 13:05:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:113
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('6')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/ba in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 113
+[29-Aug-2020 13:05:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:113
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('6')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/ba in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 113
+[29-Aug-2020 13:05:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:113
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('7')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/ba in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 113
+[29-Aug-2020 13:08:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:113
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('10')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/b in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 113
+[29-Aug-2020 13:08:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:113
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('9')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/ba in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 113
+[29-Aug-2020 13:08:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:113
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('8')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/ba in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 113
+[29-Aug-2020 13:11:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:112
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('11')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/b in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 112
+[29-Aug-2020 13:29:32 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[29-Aug-2020 13:29:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:112
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('7')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/ba in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 112
+[29-Aug-2020 13:29:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:112
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('7')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/ba in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 112
+[29-Aug-2020 13:32:18 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[29-Aug-2020 13:32:55 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[29-Aug-2020 13:36:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:112
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('18')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/b in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 112
+[29-Aug-2020 13:37:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:112
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('14')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/b in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 112
+[01-Sep-2020 05:34:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:112
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('20')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/b in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 112
+[01-Sep-2020 05:37:16 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:112
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('15')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/b in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 112
+[01-Sep-2020 10:42:02 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:112
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('22')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/b in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 112
+[01-Sep-2020 10:56:55 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[01-Sep-2020 11:01:16 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[01-Sep-2020 11:04:13 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[01-Sep-2020 11:05:04 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[01-Sep-2020 11:07:36 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[01-Sep-2020 11:09:24 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[01-Sep-2020 11:10:30 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[01-Sep-2020 11:13:08 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[01-Sep-2020 11:14:00 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[01-Sep-2020 11:14:18 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[01-Sep-2020 11:45:26 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[01-Sep-2020 11:47:44 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[01-Sep-2020 11:47:44 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[02-Sep-2020 05:36:54 UTC] PHP Warning:  Illegal string offset 'email_address' in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 47
+[02-Sep-2020 05:37:28 UTC] PHP Warning:  Illegal string offset 'email_address' in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 47
+[02-Sep-2020 05:58:51 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 86
+[02-Sep-2020 05:58:51 UTC] PHP Fatal error:  Uncaught lithium\data\model\QueryException: SELECT * FROM `professionals` AS `Professionals` WHERE `Professionals`.`email` IS NULL AND `Professionals`.`password` IS NULL;: Unknown column 'Professionals.email' in 'where clause' in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php:1607
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\source\Database->lithium\data\source\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php(1608): lithium\aop\Filters::run(Object(lithium\data\source\database\adapter\MySql), '_error', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/database/adapter/MySql.php(407): lithium\data\source\Database->_error('SELECT * FROM `...')
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\source\database\adapter\MySql->lithium\data\source\database\adapter\{closure}( in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php on line 1607
+[02-Sep-2020 06:01:00 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 86
+[02-Sep-2020 06:01:00 UTC] PHP Fatal error:  Uncaught lithium\data\model\QueryException: SELECT * FROM `professionals` AS `Professionals` WHERE `Professionals`.`email` IS NULL AND `Professionals`.`password` IS NULL;: Unknown column 'Professionals.email' in 'where clause' in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php:1607
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\source\Database->lithium\data\source\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php(1608): lithium\aop\Filters::run(Object(lithium\data\source\database\adapter\MySql), '_error', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/database/adapter/MySql.php(407): lithium\data\source\Database->_error('SELECT * FROM `...')
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\source\database\adapter\MySql->lithium\data\source\database\adapter\{closure}( in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php on line 1607
+[02-Sep-2020 06:02:20 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 86
+[02-Sep-2020 06:02:20 UTC] PHP Fatal error:  Uncaught lithium\data\model\QueryException: SELECT * FROM `professionals` AS `Professionals` WHERE `Professionals`.`email` IS NULL AND `Professionals`.`password` IS NULL;: Unknown column 'Professionals.email' in 'where clause' in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php:1607
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\source\Database->lithium\data\source\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php(1608): lithium\aop\Filters::run(Object(lithium\data\source\database\adapter\MySql), '_error', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/database/adapter/MySql.php(407): lithium\data\source\Database->_error('SELECT * FROM `...')
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\source\database\adapter\MySql->lithium\data\source\database\adapter\{closure}( in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php on line 1607
+[02-Sep-2020 06:05:32 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 86
+[02-Sep-2020 06:05:32 UTC] PHP Fatal error:  Uncaught lithium\data\model\QueryException: SELECT * FROM `professionals` AS `Professionals` WHERE `Professionals`.`email` IS NULL AND `Professionals`.`password` IS NULL;: Unknown column 'Professionals.email' in 'where clause' in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php:1607
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\source\Database->lithium\data\source\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php(1608): lithium\aop\Filters::run(Object(lithium\data\source\database\adapter\MySql), '_error', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/database/adapter/MySql.php(407): lithium\data\source\Database->_error('SELECT * FROM `...')
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\source\database\adapter\MySql->lithium\data\source\database\adapter\{closure}( in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php on line 1607
+[02-Sep-2020 06:11:04 UTC] PHP Fatal error:  Uncaught lithium\data\model\QueryException: SELECT * FROM `professionals` AS `Professionals` WHERE `Professionals`.`email` = 'abc@dfg.com' AND `Professionals`.`password` = 'dcsdf';: Unknown column 'Professionals.email' in 'where clause' in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php:1607
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\source\Database->lithium\data\source\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php(1608): lithium\aop\Filters::run(Object(lithium\data\source\database\adapter\MySql), '_error', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/database/adapter/MySql.php(407): lithium\data\source\Database->_error('SELECT * FROM `...')
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\source\database\adapter\MySql->lithium\data\source\database\adapter\ in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php on line 1607
+[02-Sep-2020 06:11:22 UTC] PHP Fatal error:  Uncaught lithium\data\model\QueryException: SELECT * FROM `professionals` AS `Professionals` WHERE `Professionals`.`email` = 'abc@dfg.com' AND `Professionals`.`password` = 'dcsdf';: Unknown column 'Professionals.email' in 'where clause' in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php:1607
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\source\Database->lithium\data\source\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php(1608): lithium\aop\Filters::run(Object(lithium\data\source\database\adapter\MySql), '_error', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/database/adapter/MySql.php(407): lithium\data\source\Database->_error('SELECT * FROM `...')
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\source\database\adapter\MySql->lithium\data\source\database\adapter\ in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php on line 1607
+[02-Sep-2020 06:12:12 UTC] PHP Fatal error:  Uncaught lithium\data\model\QueryException: SELECT * FROM `professionals` AS `Professionals` WHERE `Professionals`.`email` = 'abc@dfg.com' AND `Professionals`.`password` = 'dcsdf';: Unknown column 'Professionals.email' in 'where clause' in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php:1607
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\source\Database->lithium\data\source\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php(1608): lithium\aop\Filters::run(Object(lithium\data\source\database\adapter\MySql), '_error', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/database/adapter/MySql.php(407): lithium\data\source\Database->_error('SELECT * FROM `...')
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\source\database\adapter\MySql->lithium\data\source\database\adapter\ in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php on line 1607
+[02-Sep-2020 06:12:50 UTC] PHP Fatal error:  Uncaught lithium\data\model\QueryException: SELECT * FROM `professionals` AS `Professionals` WHERE `Professionals`.`email` = 'nadeem.eway@gmail.com' AND `Professionals`.`password` = '123456';: Unknown column 'Professionals.email' in 'where clause' in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php:1607
+Stack trace:
+#0 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\source\Database->lithium\data\source\{closure}(Array)
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php(1608): lithium\aop\Filters::run(Object(lithium\data\source\database\adapter\MySql), '_error', Array, Object(Closure))
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/database/adapter/MySql.php(407): lithium\data\source\Database->_error('SELECT * FROM `...')
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\data\source\database\adapter\MySql->lithium\data\source\databa in /home/ewayiuax/public_html/bark/backend/libraries/lithium/data/source/Database.php on line 1607
+[02-Sep-2020 06:13:58 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 86
+[02-Sep-2020 06:15:32 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 86
+[02-Sep-2020 06:16:41 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 86
+[02-Sep-2020 06:17:28 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 86
+[02-Sep-2020 06:17:54 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 86
+[02-Sep-2020 06:18:24 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 86
+[02-Sep-2020 06:19:49 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 86
+[02-Sep-2020 06:21:40 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 86
+[02-Sep-2020 06:23:26 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 86
+[02-Sep-2020 06:26:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:112
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('24')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/b in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 112
+[02-Sep-2020 06:30:22 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 86
+[02-Sep-2020 06:34:39 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[02-Sep-2020 06:45:02 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 06:55:47 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 06:57:50 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 06:59:19 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 07:00:21 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 07:01:07 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 07:05:38 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 07:07:25 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 07:08:17 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 07:14:40 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 07:14:58 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 07:15:44 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 07:16:56 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 07:26:44 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 07:27:11 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 07:35:24 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 07:36:20 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 07:37:06 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 07:49:18 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 07:57:21 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 08:06:06 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 08:08:21 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 08:09:33 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 08:10:24 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 08:10:52 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 08:14:46 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 08:15:36 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 08:16:24 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 08:16:50 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 08:20:13 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 09:10:54 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 09:13:38 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 09:14:49 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 09:15:00 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 09:15:15 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 09:21:56 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[02-Sep-2020 09:26:16 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[02-Sep-2020 09:26:17 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[02-Sep-2020 09:52:55 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[02-Sep-2020 09:58:41 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[02-Sep-2020 10:06:24 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[02-Sep-2020 10:07:20 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[02-Sep-2020 10:15:14 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[02-Sep-2020 10:26:27 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 13:03:07 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 13:14:45 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 13:15:39 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 13:19:08 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[02-Sep-2020 13:20:59 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[02-Sep-2020 13:21:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php:112
+Stack trace:
+#0 [internal function]: app\controllers\FormsController->deleteForm('26')
+#1 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(211): call_user_func_array(Array, Array)
+#2 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Controller->lithium\action\{closure}(Array)
+#3 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Controller.php(225): lithium\aop\Filters::run(Object(app\controllers\FormsController), '__invoke', Array, Object(Closure))
+#4 /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Dispatcher.php(277): lithium\action\Controller->__invoke(Object(lithium\action\Request), Array)
+#5 /home/ewayiuax/public_html/bark/backend/libraries/lithium/aop/Filters.php(231): lithium\action\Dispatcher::lithium\action\{closure}(Array)
+#6 /home/ewayiuax/public_html/bark/b in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 112
+[02-Sep-2020 13:23:05 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[02-Sep-2020 13:29:25 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/FormsController.php on line 76
+[03-Sep-2020 05:50:53 Etc/GMT] PHP Warning:  require(PHPMailer/src/Exception.php): failed to open stream: No such file or directory in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 11
+[03-Sep-2020 05:50:53 Etc/GMT] PHP Warning:  require(PHPMailer/src/Exception.php): failed to open stream: No such file or directory in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 11
+[03-Sep-2020 05:50:53 Etc/GMT] PHP Fatal error:  require(): Failed opening required 'PHPMailer/src/Exception.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 11
+[03-Sep-2020 05:52:09 Etc/GMT] PHP Warning:  require(PHPMailer/src/Exception.php): failed to open stream: No such file or directory in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 11
+[03-Sep-2020 05:52:09 Etc/GMT] PHP Warning:  require(PHPMailer/src/Exception.php): failed to open stream: No such file or directory in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 11
+[03-Sep-2020 05:52:09 Etc/GMT] PHP Fatal error:  require(): Failed opening required 'PHPMailer/src/Exception.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 11
+[03-Sep-2020 05:59:16 Etc/GMT] PHP Parse error:  syntax error, unexpected '$data' (T_VARIABLE), expecting function (T_FUNCTION) in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 18
+[03-Sep-2020 06:00:24 Etc/GMT] PHP Fatal error:  Class 'app\controllers\api\PHPMailer\PHPMailer\PHPMailer' not found in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 45
+[03-Sep-2020 06:00:28 Etc/GMT] PHP Fatal error:  Class 'app\controllers\api\PHPMailer\PHPMailer\PHPMailer' not found in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 45
+[03-Sep-2020 06:00:47 Etc/GMT] PHP Fatal error:  Class 'app\controllers\api\PHPMailer\PHPMailer\PHPMailer' not found in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 45
+[03-Sep-2020 06:02:33 Etc/GMT] PHP Fatal error:  Class 'app\controllers\api\PHPMailer\PHPMailer\PHPMailer' not found in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 45
+[03-Sep-2020 08:10:11 Etc/GMT] PHP Fatal error:  Class 'app\controllers\api\PHPMailer\PHPMailer\PHPMailer' not found in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 45
+[03-Sep-2020 09:20:33 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php:66) in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Response.php on line 197
+[03-Sep-2020 09:20:33 Etc/GMT] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php:66) in /home/ewayiuax/public_html/bark/backend/libraries/lithium/action/Response.php on line 197
+[03-Sep-2020 09:25:47 Etc/GMT] PHP Parse error:  syntax error, unexpected 'Lato' (T_STRING) in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 49
+[03-Sep-2020 09:27:15 Etc/GMT] PHP Parse error:  syntax error, unexpected 'Lato' (T_STRING) in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 36
+[03-Sep-2020 09:33:59 Etc/GMT] PHP Parse error:  syntax error, unexpected '"Lato"' (T_CONSTANT_ENCAPSED_STRING) in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 36
+[03-Sep-2020 09:37:03 Etc/GMT] PHP Parse error:  syntax error, unexpected '"Lato"' (T_CONSTANT_ENCAPSED_STRING) in /home/ewayiuax/public_html/bark/backend/controllers/MyPostsController.php on line 36
+[03-Sep-2020 12:23:18 Etc/GMT] PHP Fatal error:  Call to undefined function app\controllers\sendMail() in /home/ewayiuax/public_html/bark/backend/controllers/LeadsController.php on line 80
+[03-Sep-2020 12:23:49 Etc/GMT] PHP Fatal error:  Call to undefined function app\controllers\sendMail() in /home/ewayiuax/public_html/bark/backend/controllers/LeadsController.php on line 80
+[04-Sep-2020 05:11:09 Etc/GMT] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[04-Sep-2020 06:41:27 Etc/GMT] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ewayiuax/public_html/bark/backend/controllers/TransactionsController.php on line 92
+[04-Sep-2020 06:52:07 Etc/GMT] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[04-Sep-2020 06:53:34 Etc/GMT] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[04-Sep-2020 09:49:29 Etc/GMT] PHP Fatal error:  Cannot redeclare app\controllers\ProfessionalsController::editData() in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 183
+[04-Sep-2020 09:50:06 Etc/GMT] PHP Fatal error:  Cannot redeclare app\controllers\ProfessionalsController::editData() in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 183
+[04-Sep-2020 09:51:15 Etc/GMT] PHP Fatal error:  Cannot redeclare app\controllers\ProfessionalsController::editData() in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 183
+[04-Sep-2020 09:52:51 Etc/GMT] PHP Fatal error:  Cannot redeclare app\controllers\ProfessionalsController::editData() in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 183
+[04-Sep-2020 09:57:38 Etc/GMT] PHP Fatal error:  Cannot redeclare app\controllers\ProfessionalsController::editData() in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 183
+[04-Sep-2020 09:58:26 Etc/GMT] PHP Fatal error:  Cannot redeclare app\controllers\ProfessionalsController::editData() in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 183
+[04-Sep-2020 09:59:08 Etc/GMT] PHP Fatal error:  Cannot redeclare app\controllers\ProfessionalsController::editData() in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 183
+[04-Sep-2020 09:59:39 Etc/GMT] PHP Fatal error:  Cannot redeclare app\controllers\ProfessionalsController::editData() in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 183
+[04-Sep-2020 10:05:06 Etc/GMT] PHP Fatal error:  Cannot redeclare app\controllers\ProfessionalsController::editData() in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 183
+[04-Sep-2020 10:05:49 Etc/GMT] PHP Fatal error:  Cannot redeclare app\controllers\ProfessionalsController::editData() in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 183
+[04-Sep-2020 10:06:15 Etc/GMT] PHP Fatal error:  Cannot redeclare app\controllers\ProfessionalsController::editData() in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 183
+[04-Sep-2020 10:07:35 Etc/GMT] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 152
+[04-Sep-2020 10:09:53 Etc/GMT] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 152
+[04-Sep-2020 10:12:47 Etc/GMT] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 152
+[04-Sep-2020 10:14:02 Etc/GMT] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 152
+[04-Sep-2020 10:14:31 Etc/GMT] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 152
+[04-Sep-2020 10:15:45 Etc/GMT] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 152
+[04-Sep-2020 10:20:25 Etc/GMT] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 152
+[04-Sep-2020 10:21:16 Etc/GMT] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 152
+[04-Sep-2020 10:23:33 Etc/GMT] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 152
+[04-Sep-2020 10:25:23 Etc/GMT] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 152
+[04-Sep-2020 10:31:50 Etc/GMT] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 152
+[04-Sep-2020 10:32:21 Etc/GMT] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 152
+[04-Sep-2020 10:33:27 Etc/GMT] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 152
+[04-Sep-2020 12:21:25 Etc/GMT] PHP Fatal error:  Call to a member function to() on null in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 159
+[04-Sep-2020 12:21:52 Etc/GMT] PHP Fatal error:  Call to a member function to() on null in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 159
+[04-Sep-2020 12:21:55 Etc/GMT] PHP Fatal error:  Call to a member function to() on null in /home/ewayiuax/public_html/bark/backend/controllers/ProfessionalsController.php on line 159
+[04-Sep-2020 12:22:39 Etc/GMT] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87
+[04-Sep-2020 12:23:14 Etc/GMT] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/ewayiuax/public_html/bark/backend/controllers/ApiController.php on line 87

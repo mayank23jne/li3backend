@@ -57,9 +57,9 @@ use lithium\data\Connections;
  	'type' => 'database',
  	'adapter' => 'MySql',
  	'host' => 'localhost',
- 	'login' => 'root',
- 	'password' => '',
- 	'database' => 'li3',
+ 	'login' => 'ewayiuax_bark',
+ 	'password' => 'bark@123',
+ 	'database' => 'ewayiuax_bark',
  	'encoding' => 'UTF-8',
  	'strict' => false
  ]);
